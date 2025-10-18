@@ -23,6 +23,16 @@ jobs:
       - name: Run Cypress tests with Mochawesome
         run: npx cypress run --config-file configs/cypress.config.js
 
+      - name: Rename mochawesome.html to index.html
+        run: |
+          REPORT_PATH="cypress/reports/mochawesome-report"
+          if [ -f "$REPORT_PATH/mochawesome.html" ]; then
+            mv "$REPORT_PATH/mochawesome.html" "$REPORT_PATH/index.html"
+          else
+            echo "❌ Report not found at $REPORT_PATH/mochawesome.html"
+            exit 1
+          fi
+
       - name: Deploy report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:

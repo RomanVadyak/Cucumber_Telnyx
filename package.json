@@ -1,13 +1,4 @@
 {
-  "cypress": {
-    "reporter": "mochawesome",
-    "reporterOptions": {
-      "reportDir": "cypress/reports/mochawesome-report",
-      "overwrite": false,
-      "html": true,
-      "json": false
-    }
-  },
   "scripts": {
     "cypress:open": "npx cypress open --config-file configs/cypress.config.js",
     "cypress:run": "npx cypress run --config-file configs/cypress.config.js",
