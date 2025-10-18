@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: Run Cypress tests with Mochawesome
-        run: npx cypress run
+        run: npx cypress run --config-file configs/cypress.config.js
 
       - name: Deploy report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
