@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "cypress:open": "npx cypress open --config-file configs/cypress.config.js",
+    "cypress:run": "npx cypress run --config-file configs/cypress.config.js",
+    "cypress:sec": "npx cypress run --config-file configs/cypress.config.sec.js"
+  },
+  "author": "Vadyak Roman",
+  "description": "Telnyx Tests",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^23.2.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.6",
+    "cypress": "^15.3.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/step_definitions/*.js"
+  }
+}

@@ -1,0 +1,12 @@
+export const smsShortCodePageUrl = "/sms-short-code";
+export const pricingPageUrl = "/pricing";
+export const signUpPageUrl = "/sign-up";
+export const ourNetworkPageUrl = "/our-network";
+export const templatesPageUrl = "/templates";
+export const smsApiPageUrl = "/products/sms-api";
+export const retailAndCommercePageUrl = "/solutions/retail-and-ecommerce";
+export const cloudStorePageUrl = "/products/cloud-storage";
+export const programmableNetworkingPageUrl = "/products/programmable-networking";
+export const healthcarePageUrl = "/solutions/healthcare";
+export const missionControlPageUrl = "/mission-control";
+export const customersStoriesPageUrl = "/customer-stories";
