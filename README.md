@@ -17,8 +17,8 @@ This project contains automated end-to-end tests for the [Telnyx](https://telnyx
 ## Clone Repository
 
 ```bash
-git clone https://github.com/your-username/telnyx-cypress-tests.git
-cd telnyx-cypress-tests
+git clone https://github.com/RomanVadyak/Cucumber_Telnyx.git
+cd Cucumber_Telnyx
 ```
 
 ## Install Dependencies
@@ -44,5 +44,15 @@ npm run cypress:open
 **If you're using alternate configurations**
 
 ```bash
-npm run cypress:run -- --config-file configs/cypress.config.sec.js
+npm run cypress:sec
+```
+
+## HTML Reporting
+
+HTML reports are generated using [cypress-mochawesome-reporter](https://github.com/LironEr/cypress-mochawesome-reporter).
+
+## To generate a report:
+
+```bash
+npx cypress run
 ```
