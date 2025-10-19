@@ -22,7 +22,7 @@ Feature: Chapter 1 tests
             And The form have "Create a Telnyx account" text
 
 
-      Scenario: User navigates to Our Network page and verifies three Resources buttons are visible
+      Scenario: User navigates to Our Network page and verifies four links in the right top corner are visible
             When I click on the Why Telnyx link
             And I click on the Our Network link
             Then The Our Network page is displayed

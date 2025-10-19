@@ -21,42 +21,42 @@ Before(() => {
   cy.visit("/");
 });
 
-Then("The Products button should be visible and have text", () => {
+Then("The Products button should be visible and not be empty", () => {
   basePage.navBarElements
     .productsOption()
     .should("be.visible")
     .and("not.be.empty");
 });
 
-Then("The Solutions button should be visible and have text", () => {
+Then("The Solutions button should be visible and not be empty", () => {
   basePage.navBarElements
     .solutionsOption()
     .should("be.visible")
     .and("not.be.empty");
 });
 
-Then("The Pricing button should be visible and have text", () => {
+Then("The Pricing button should be visible and not be empty", () => {
   basePage.navBarElements
     .pricingOption()
     .should("be.visible")
     .and("not.be.empty");
 });
 
-Then("The whyTelntx button should be visible and have text", () => {
+Then("The whyTelntx button should be visible and not be empty", () => {
   basePage.navBarElements
     .whyTelnyxOption()
     .should("be.visible")
     .and("not.be.empty");
 });
 
-Then("The Resources button should be visible and have text", () => {
+Then("The Resources button should be visible and not be empty", () => {
   basePage.navBarElements
     .resourcesOption()
     .should("be.visible")
     .and("not.be.empty");
 });
 
-Then("The Developers button should be visible and have text", () => {
+Then("The Developers button should be visible and not be empty", () => {
   basePage.navBarElements
     .developersOption()
     .should("be.visible")

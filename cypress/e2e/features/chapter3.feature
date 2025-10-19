@@ -1,11 +1,11 @@
-Feature: Chapter 2 tests
+Feature: Chapter 3 tests
 
 
-    Scenario: User verifies Telnyx Pricing Box is visible and not empty
+    Scenario: User verifies Telnyx Pricing section is visible and not empty
         When I click on "Products" link on the main page
         And I click on Programmable Networking
         Then The Programmable Networking page is displayed
-        And The Telnyx Pricing Box is visible and not empty
+        And The Telnyx Pricing section is visible and not empty
 
 
     Scenario: User verifies three buttons in Healthcare page are visible

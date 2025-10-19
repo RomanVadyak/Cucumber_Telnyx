@@ -36,7 +36,7 @@ Then("The Programmable Networking page is displayed", () => {
   verifyUrlIncludes(programmableNetworkingPageUrl);
 });
 
-Then("The Telnyx Pricing Box is visible and not empty", () => {
+Then("The Telnyx Pricing section is visible and not empty", () => {
   programmableNetworkingPage.elements
     .pricingBox()
     .should("be.visible")

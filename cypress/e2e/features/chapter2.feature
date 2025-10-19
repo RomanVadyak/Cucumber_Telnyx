@@ -1,12 +1,12 @@
 Feature: Chapter 2 tests
 
     Scenario: User verifies all navigation buttons have visible text
-        Then The Products button should be visible and have text
-        And The Solutions button should be visible and have text
-        And The Pricing button should be visible and have text
-        And The whyTelntx button should be visible and have text
-        And The Resources button should be visible and have text
-        And The Developers button should be visible and have text
+        Then The Products button should be visible and not be empty
+        And The Solutions button should be visible and not be empty
+        And The Pricing button should be visible and not be empty
+        And The whyTelntx button should be visible and not be empty
+        And The Resources button should be visible and not be empty
+        And The Developers button should be visible and not be empty
 
     Scenario: User verifies four channel links in sms API page are visible
         When I hover to "Products" link on navigation bar and click it
@@ -23,7 +23,7 @@ Feature: Chapter 2 tests
         And The page have two visible buttons under the title
 
 
-    Scenario: User verifies three visible buttons with correct texts in cloud storage page
+    Scenario: User verifies three visible buttons in Cloud Storage page
         When I click on the "Products" link at the start of the navigation bar
         And I click on Storage link
         Then The Cloud Storage page is displayed
