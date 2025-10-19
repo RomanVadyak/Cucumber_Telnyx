@@ -19,6 +19,7 @@ module.exports = defineConfig({
     watchForFileChanges: false,
     viewportWidth: 1366,
     viewportHeight: 768,
+    defaultCommandTimeout: 10000,
 
     async setupNodeEvents(on, config) {
       await addCucumberPreprocessorPlugin(on, config);
