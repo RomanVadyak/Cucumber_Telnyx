@@ -6,6 +6,12 @@ const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
 const esbuildPlugin = require("@badeball/cypress-cucumber-preprocessor/esbuild");
 
 module.exports = defineConfig({
+  reporter: "mochawesome",
+  reporterOptions: {
+    reportDir: "cypress/reports/mochawesome-report",
+    overwrite: false,
+    html: true,
+    json: false,
   e2e: {
     specPattern: "cypress/e2e/features/**/*.feature",
     baseUrl: "https://telnyx.com/",

@@ -14,7 +14,6 @@ Feature: Chapter 2 tests
         Then The sms API page is displayed
         And Four channel links are visible
 
-
     Scenario: User verifies correct retail and e-comerce page title and two visible buttons
         When I click on the Solutions link in the navigation bar
         And I click on Retail and E-comerce link
@@ -22,13 +21,11 @@ Feature: Chapter 2 tests
         And The page have "Turn browsers into buyers with personalized AI" title
         And The page have two visible buttons under the title
 
-
     Scenario: User verifies three visible buttons in Cloud Storage page
         When I click on the "Products" link at the start of the navigation bar
         And I click on Storage link
         Then The Cloud Storage page is displayed
         And Resources section have 3 visible buttons
-
 
     Scenario: User verifies correct titles in the footer of the pricing page
         When I click on "Pricing" link in the navigation bar in the header of the site
